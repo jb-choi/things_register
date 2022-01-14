@@ -1,4 +1,148 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+
+void main() => runApp(ThingsRegisterApp());
+
+class ThingsRegisterApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: '물건등록기능',
+      theme: ThemeData(
+        primarySwatch: Colors.red
+      ),
+    home: MyCard(),
+    );
+  }
+}
+
+class MyCard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.amber,
+      appBar: AppBar(
+        title: const Text('pocketMon'),
+        centerTitle: true,
+        backgroundColor: Colors.amber[700],
+        elevation: 0.0,
+    ),
+      body : Padding(
+        padding : EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text('NAME',
+            style: TextStyle(
+              color: Colors.white,
+              letterSpacing: 2.0,
+            )
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text('BBANTO',
+            style: TextStyle(
+              color: Colors.white,
+              letterSpacing: 2.0,
+              fontSize: 28.0,
+              fontWeight: FontWeight.bold,
+            )
+            ),
+
+            SizedBox(
+              height: 30.0
+            ),
+            Text('BBANTO power level',
+                style: TextStyle(
+                  color: Colors.white,
+                  letterSpacing: 2.0,
+                )
+            ),
+            SizedBox(
+              height: 10.0,
+            ),
+            Text('10',
+                style: TextStyle(
+                  color: Colors.white,
+                  letterSpacing: 2.0,
+                  fontSize: 28.0,
+                  fontWeight: FontWeight.bold,
+                )
+            ),
+            SizedBox(
+              height: 10.0
+            ),
+            Row(
+              children: <Widget>[
+                Icon(Icons.check_circle_outline),
+                Text('uinsg light sbaser',
+                    style: TextStyle(
+                        fontSize:16.0,
+                        letterSpacing:1.0
+                    ))
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Icon(Icons.check_circle_outline),
+                Text('face hero tattoo',
+                    style: TextStyle(
+                        fontSize:16.0,
+                        letterSpacing:1.0
+                    ))
+              ],
+            ),
+            Row(
+              children: <Widget>[
+                Icon(Icons.check_circle_outline),
+                Text('fire flames',
+                    style: TextStyle(
+                        fontSize:16.0,
+                        letterSpacing:1.0
+                    ))
+              ],
+            )
+          ],
+
+
+
+
+
+    )
+    )
+    );
+  }
+}
+
+
+
+// class MyHomePage extends StatelessWidget {
+//   // const ({Key? key}) : super(key: key);
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('ㅇㅇㅇ???'),
+//       ),
+//       body : Center(
+//         child: Column(
+//           children: <Widget>[
+//             Text('Hello'),
+//             Text('Hello'),
+//             Text('Hello')
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+
+
+
+
+
 //
 // void main() {
 //   runApp(const MyApp());
@@ -115,26 +259,26 @@
 // }
 
 
-import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Welcome to Flutter',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Welcome to Flutter'),
-        ),
-        body: Center(
-          child: Text('Hello World'),
-        ),
-      ),
-    );
-  }
-}
+//
+// void main() => runApp(MyApp());
+//
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Welcome to Flutter',
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: Text('Welcome to Flutter'),
+//         ),
+//         body: Center(
+//           child: Text('Hello World'),
+//         ),
+//       ),
+//     );
+//   }
+// }
 
 
 
