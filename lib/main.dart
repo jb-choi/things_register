@@ -6,6 +6,7 @@ class ThingsRegisterApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: '물건등록기능',
       theme: ThemeData(
         primarySwatch: Colors.red
@@ -14,8 +15,9 @@ class ThingsRegisterApp extends StatelessWidget{
     );
   }
 }
-
 class MyCard extends StatelessWidget {
+  // const ({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,100 +27,213 @@ class MyCard extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.amber[700],
         elevation: 0.0,
-    ),
-      body : Padding(
-        padding : EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            // Center(
-                CircleAvatar(
+        ),
+
+        body : Padding(
+          padding : EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Center(
+                  child: CircleAvatar(
                     backgroundImage: AssetImage('assets/picka1.png'),
                     radius: 60.0,
+                  ),
+                ),
+              Divider(
+                height: 60.0,
+                color: Colors.grey[850],
+                thickness:0.5,
+                endIndent:30.0,
+              ),
+              Text('NAME',
+                style: TextStyle(
+                  color: Colors.white,
+                  letterSpacing: 2.0,
+                  )
+                ),
+              SizedBox(
+                height: 10.0,
+                ),
+              Text('BBANTO',
+                style: TextStyle(
+                color: Colors.white,
+                letterSpacing: 2.0,
+                fontSize: 28.0,
+                fontWeight: FontWeight.bold,
                 )
-            // ),
-            Text('NAME',
-            style: TextStyle(
-              color: Colors.white,
-              letterSpacing: 2.0,
-            )
-            ),
-            SizedBox(
-              height: 10.0,
-            ),
-            Text('BBANTO',
-            style: TextStyle(
-              color: Colors.white,
-              letterSpacing: 2.0,
-              fontSize: 28.0,
-              fontWeight: FontWeight.bold,
-            )
-            ),
+                ),
 
-            SizedBox(
-              height: 30.0
-            ),
-            Text('BBANTO power level',
+              SizedBox(
+                height: 30.0
+                ),
+              Text('BBANTO power level',
                 style: TextStyle(
-                  color: Colors.white,
-                  letterSpacing: 2.0,
+                color: Colors.white,
+                letterSpacing: 2.0,
                 )
-            ),
-            SizedBox(
-              height: 10.0,
-            ),
-            Text('10',
+                ),
+              SizedBox(
+                height: 10.0,
+                ),
+              Text('10',
                 style: TextStyle(
-                  color: Colors.white,
-                  letterSpacing: 2.0,
-                  fontSize: 28.0,
-                  fontWeight: FontWeight.bold,
+                color: Colors.white,
+                letterSpacing: 2.0,
+                fontSize: 28.0,
+                fontWeight: FontWeight.bold,
                 )
-            ),
-            SizedBox(
-              height: 10.0
-            ),
-            Row(
-              children: <Widget>[
+                ),
+              SizedBox(
+                height: 10.0
+                ),
+              Row(
+                children: <Widget>[
                 Icon(Icons.check_circle_outline),
                 Text('uinsg light sbaser',
-                    style: TextStyle(
-                        fontSize:16.0,
-                        letterSpacing:1.0
-                    ))
-              ],
+                  style: TextStyle(
+                  fontSize:16.0,
+                  letterSpacing:1.0
+                ))
+                ],
             ),
-            Row(
-              children: <Widget>[
+              Row(
+                children: <Widget>[
                 Icon(Icons.check_circle_outline),
                 Text('face hero tattoo',
-                    style: TextStyle(
-                        fontSize:16.0,
-                        letterSpacing:1.0
-                    ))
-              ],
-            ),
+                  style: TextStyle(
+                  fontSize:16.0,
+                  letterSpacing:1.0
+                ))
+                ],
+                ),
             Row(
               children: <Widget>[
-                Icon(Icons.check_circle_outline),
-                Text('fire flames',
-                    style: TextStyle(
-                        fontSize:16.0,
-                        letterSpacing:1.0
-                    ))
+              Icon(Icons.check_circle_outline),
+              Text('fire flames',
+              style: TextStyle(
+                fontSize:16.0,
+                letterSpacing:1.0
+                ))
               ],
+            ),
+          Center(
+            child: CircleAvatar(
+              backgroundImage: AssetImage('assets/picka2.png'),
+              radius: 40.0,
+              backgroundColor: Colors.white,
             )
-          ],
-
-
-
-
-
+          )
+        ]
     )
     )
     );
   }
 }
+
+
+
+
+// class MyCard extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       backgroundColor: Colors.amber,
+//       appBar: AppBar(
+//         title: const Text('pocketMon'),
+//         centerTitle: true,
+//         backgroundColor: Colors.amber[700],
+//         elevation: 0.0,
+//     ),
+//       body : Padding(
+//         padding : EdgeInsets.fromLTRB(30.0, 40.0, 0.0, 0.0),
+//         child: Column(
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           // children: <Widget>[
+//             // Center(
+//             //     CircleAvatar(
+//             //         backgroundImage: AssetImage('assets/picka1.png'),
+//             //         radius: 60.0,
+//             //     ),
+//             // ),
+//             Text('NAME',
+//             style: TextStyle(
+//               color: Colors.white,
+//               letterSpacing: 2.0,
+//             )
+//             ),
+//             SizedBox(
+//               height: 10.0,
+//             ),
+//             Text('BBANTO',
+//             style: TextStyle(
+//               color: Colors.white,
+//               letterSpacing: 2.0,
+//               fontSize: 28.0,
+//               fontWeight: FontWeight.bold,
+//             )
+//             ),
+//
+//             SizedBox(
+//               height: 30.0
+//             ),
+//             Text('BBANTO power level',
+//                 style: TextStyle(
+//                   color: Colors.white,
+//                   letterSpacing: 2.0,
+//                 )
+//             ),
+//             SizedBox(
+//               height: 10.0,
+//             ),
+//             Text('10',
+//                 style: TextStyle(
+//                   color: Colors.white,
+//                   letterSpacing: 2.0,
+//                   fontSize: 28.0,
+//                   fontWeight: FontWeight.bold,
+//                 )
+//             ),
+//             SizedBox(
+//               height: 10.0
+//             ),
+//             Row(
+//               children: <Widget>[
+//                 Icon(Icons.check_circle_outline),
+//                 Text('uinsg light sbaser',
+//                     style: TextStyle(
+//                         fontSize:16.0,
+//                         letterSpacing:1.0
+//                     ))
+//               ],
+//             ),
+//             Row(
+//               children: <Widget>[
+//                 Icon(Icons.check_circle_outline),
+//                 Text('face hero tattoo',
+//                     style: TextStyle(
+//                         fontSize:16.0,
+//                         letterSpacing:1.0
+//                     ))
+//               ],
+//             ),
+//             Row(
+//               children: <Widget>[
+//                 Icon(Icons.check_circle_outline),
+//                 Text('fire flames',
+//                     style: TextStyle(
+//                         fontSize:16.0,
+//                         letterSpacing:1.0
+//                     ))
+//               ],
+//             )
+//           ],
+//         )
+//     )
+//     )
+//     );
+//   }
+// }
 
 
 
